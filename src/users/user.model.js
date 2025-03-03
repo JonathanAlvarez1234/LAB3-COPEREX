@@ -3,35 +3,35 @@ import mongoose from "mongoose";
 const UserSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: [true, "The name is required"]
+        required: [true, "El nombre es necesario"]
     },
     surname: {
         type: String,
-        required: [true, "The surname is required"]
+        required: [true, "El apellido es necesario"]
     },
     username: {
         type: String,
-        required: [true, "The username is required"]
+        required: [true, "El nombre de usuario es necesario"]
     },
     email:{
         type: String,
-        required: [true, "The email is required"],
+        required: [true, "El correo es necesario"],
         unique: true
     },
     password: {
         type: String,
-        required: [true, "The password is required"]
+        required: [true, "La contraseña es necesaria"]
     },
     phone: {
         type: String,
         minLength: 8,
         maxLength: 8,
-        required: [true, "The phone is required"]
+        required: [true, "El telefono es necesario"]
     },
-    status: {
+    state: {
         type: Boolean,
         default: true
-    }
+    },
 });
 
 UserSchema.methods.toJSON = function() {
@@ -40,4 +40,4 @@ UserSchema.methods.toJSON = function() {
     return usuario;
 }
 
-export default mongoose.model("User", UserSchema);
+export default mongoose.model("Usuario", UserSchema);

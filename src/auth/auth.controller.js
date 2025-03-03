@@ -81,9 +81,9 @@ export const createAdministrator = async () => {
                 role: "ADMIN_ROLE"
             });
             await admin.save();
-            console.log("Ad");
+            console.log("Administrador creado");
         } else {
-            console.log("Existing administrator");
+            console.log("Ya existe un administrador");
         }
     } catch (error) {
         console.error("Error creating administrator:", error);

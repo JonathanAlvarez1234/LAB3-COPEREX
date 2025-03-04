@@ -16,7 +16,7 @@ export const generateReport = async (req, res) => {
         const sheet = workbook.addWorksheet('Empresas');
 
         sheet.columns = [
-            { header: 'Nombre', key: 'name', width: 20 },
+            { header: 'Nombre de la Empresa', key: 'name', width: 20 },
             { header: 'Nivel de Impacto', key: 'impactLevel', width: 15 },
             { header: 'Años de experiencia', key: 'yearsExperience', width: 20 },
             { header: 'Categoría', key: 'category', width: 20 },

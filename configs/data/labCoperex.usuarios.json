@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "67c665af9e7a0c6e1b93d93a"
+  },
+  "name": "Admin",
+  "surname": "istrador",
+  "username": "4dmin",
+  "email": "admin@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Fz+PTz6I5WtcYUitvz9WAw$wqGddBdhybYDN4eGpdZCAm0BUiVGx8JAN6WKZrPMaPo",
+  "phone": "20003000",
+  "state": true,
+  "__v": 0
+}]

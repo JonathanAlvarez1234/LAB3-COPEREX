@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "67c69593a6b1a65825cc4a44"
+  },
+  "name": "Constructora Peralta",
+  "impactLevel": "Bajo",
+  "yearsExperience": 1,
+  "category": "Constructora",
+  "pbx": "+502 4788-8041",
+  "createdAt": {
+    "$date": "2025-03-04T05:54:27.587Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T05:54:27.587Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c695e3a6b1a65825cc4a47"
+  },
+  "name": "La Torre",
+  "impactLevel": "Alto",
+  "yearsExperience": 75,
+  "category": "Supermercado",
+  "pbx": "+502 4793-1527",
+  "createdAt": {
+    "$date": "2025-03-04T05:55:47.402Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T05:55:47.402Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c6960ea6b1a65825cc4a4a"
+  },
+  "name": "El Progreso",
+  "impactLevel": "Alto",
+  "yearsExperience": 100,
+  "category": "Contructora",
+  "pbx": "+502 2338-9100",
+  "createdAt": {
+    "$date": "2025-03-04T05:56:30.933Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T05:56:30.933Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c69643a6b1a65825cc4a4d"
+  },
+  "name": "Estudio G Diseño",
+  "impactLevel": "Intermedio",
+  "yearsExperience": 6,
+  "category": "Diseño",
+  "pbx": "+502 4000-5000",
+  "createdAt": {
+    "$date": "2025-03-04T05:57:23.117Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T05:58:19.973Z"
+  }
+}]

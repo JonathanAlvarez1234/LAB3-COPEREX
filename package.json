@@ -21,10 +21,10 @@
     "express-validator": "^7.2.1",
     "helmet": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
+    "lab3-coperex": "file:",
     "mongoose": "^8.9.5",
     "morgan": "^1.10.0",
-    "multer": "^1.4.5-lts.1",
-    "lab3-coperex": "file:"
+    "multer": "^1.4.5-lts.1"
   },
   "type": "module",
   "devDependencies": {

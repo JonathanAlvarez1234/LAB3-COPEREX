@@ -7,8 +7,8 @@ import { fileURLToPath } from 'url';
 
 
 export const generateReport = async (req, res) => {
-    const __filename = fileURLToPath(import.meta.url);
-    const __dirname = join(__filename, '..');
+    const __nombreArchivo = fileURLToPath(import.meta.url);
+    const __dir = join(__nombreArchivo, '..');
 
     try {
         const companies = await Company.find();
@@ -33,8 +33,8 @@ export const generateReport = async (req, res) => {
             });
         });
 
-        const reportPath = join(__dirname, '../reports/empresas.xlsx');
-        await fs.mkdir(join(__dirname, '../reports'), { recursive: true });
+        const reportPath = join(__dir, '../reports/empresas.xlsx');
+        await fs.mkdir(join(__dir, '../reports'), { recursive: true });
         await workbook.xlsx.writeFile(reportPath);
 
         res.status(200).json({

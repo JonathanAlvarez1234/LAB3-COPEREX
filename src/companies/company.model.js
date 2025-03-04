@@ -13,6 +13,10 @@ const CompanySchema = Schema({
         type: Number,
         required: true
     },
+    category: {
+        type: String,
+        require: true
+    },
     pbx: {
         type: String,
         required: true

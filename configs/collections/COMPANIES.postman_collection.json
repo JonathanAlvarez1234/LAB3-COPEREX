@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "3dec75fe-89ba-442d-9408-69a9304a3d7c",
+		"name": "COMPANIES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37557519"
+	},
+	"item": [
+		{
+			"name": "AGREGAR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NjVhZjllN2EwYzZlMWI5M2Q5M2EiLCJpYXQiOjE3NDEwNjc2NDQsImV4cCI6MTc0MTA3MTI0NH0.DWsQiYnc0Wzl3Yy03g9qiqIV36OKcVW8_rQvYIhRwZo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Estudio G\",\r\n    \"impactLevel\":\"Intermedio\",\r\n    \"yearsExperience\": 6,\r\n    \"category\":\"Diseño\",\r\n    \"pbx\":\"+502 4000-5000\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/gestorOp/v1/company/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"gestorOp",
+						"v1",
+						"company",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/gestorOp/v1/company/?order=asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"gestorOp",
+						"v1",
+						"company",
+						""
+					],
+					"query": [
+						{
+							"key": "order",
+							"value": "asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2M2NjVhZjllN2EwYzZlMWI5M2Q5M2EiLCJpYXQiOjE3NDEwNjc2NDQsImV4cCI6MTc0MTA3MTI0NH0.DWsQiYnc0Wzl3Yy03g9qiqIV36OKcVW8_rQvYIhRwZo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Estudio G Diseño\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/gestorOp/v1/company/67c69643a6b1a65825cc4a4d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"gestorOp",
+						"v1",
+						"company",
+						"67c69643a6b1a65825cc4a4d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

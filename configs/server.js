@@ -7,6 +7,7 @@ import morgan from "morgan";
 import { dbConnection } from "./mongo.js";
 import limiter from '../src/middlewares/validar-cant-peticiones.js'
 import authRoutes from '../src/auth/auth.routes.js'
+import companiesRouter from '../src/companies/company.routes.js'
 import { createAdministrator } from '../src/auth/auth.controller.js'
 
 const middlewares = (app) => {
@@ -20,6 +21,7 @@ const middlewares = (app) => {
 
 const routes = (app) =>{
     app.use("/gestorOp/v1/auth", authRoutes);
+    app.use("/gestorOp/v1/company", companiesRouter)
 }
 
 const connectDB = async () => {
@@ -39,7 +41,6 @@ export const initServer = async () => {
         await createAdministrator();
         middlewares(app);
         routes(app);
-
         app.listen(port);
         console.log(`Server running on port ${port}`)
     } catch (error) {
